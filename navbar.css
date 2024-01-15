@@ -5,11 +5,26 @@ body {
 
 .navbar {
     position: fixed;
+    top: 0;
     width: 100%;
     background-color: #29406a;
     overflow: hidden;
-    padding: 10px; /* Adjusted padding for smaller screens */
+    padding: 10px;
+    z-index: 1000; /* Set a high z-index value to ensure it stays above other elements */
 }
+.footer {
+
+    width: 100%;
+    background-color: #29406a;
+    overflow: hidden;
+    padding: 10px;
+    color:white;
+}
+a{
+    color:white;
+
+}
+
 
 .navbar a {
     float: left;

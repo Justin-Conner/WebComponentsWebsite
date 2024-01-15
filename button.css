@@ -1,0 +1,166 @@
+#basic{
+    width: 150px;
+    height:50px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+
+}
+#basic:hover {
+    background: lightblue; /* Replace with your desired hover color stops */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    color: black;
+}
+/************************************************************************************************************/
+#gradientR{
+    width: 150px;
+    height:50px;
+    border-radius: 10px;
+    margin: 20px;
+    background: linear-gradient(to right, dodgerblue, aqua); /* Replace with your desired color stops */
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+
+}
+#gradientR:hover {
+    background: linear-gradient(to right, aqua, dodgerblue); /* Replace with your desired hover color stops */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    color: black;
+}
+/************************************************************************************************************/
+#gradientL{
+    width: 150px;
+    height:50px;
+    border-radius: 10px;
+    margin: 20px;
+    background: linear-gradient(to left, dodgerblue, aqua); /* Replace with your desired color stops */
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+
+}
+#gradientL:hover {
+    background: linear-gradient(to left, aqua, dodgerblue); /* Replace with your desired hover color stops */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    color: black;
+}
+/************************************************************************************************************/
+#gradientT{
+    width: 150px;
+    height:50px;
+    border-radius: 10px;
+    margin: 20px;
+    background: linear-gradient(to top, dodgerblue, aqua); /* Replace with your desired color stops */
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+
+}
+#gradientT:hover {
+    background: linear-gradient(to top, aqua, dodgerblue); /* Replace with your desired hover color stops */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    color: black;
+}
+/************************************************************************************************************/
+#gradientB {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px;
+    background: linear-gradient(to bottom, dodgerblue, aqua); /* Replace with your desired color stops */
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+
+}
+
+#gradientB:hover {
+    background: linear-gradient(to bottom, aqua, dodgerblue); /* Replace with your desired hover color stops */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    color: black;
+}
+/************************************************************************************************************/
+#gradientBR {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px;
+    background: linear-gradient(to bottom right, dodgerblue, chartreuse); /* Adjust the direction and color stops as needed */
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+#gradientBR:hover {
+    background: linear-gradient(to bottom right, chartreuse, dodgerblue); /* Adjust the hover color stops */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    color: black;
+
+}
+/************************************************************************************************************/
+#gradientBL {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px;
+    background: linear-gradient(to bottom left, dodgerblue, chartreuse); /* Adjust the direction and color stops as needed */
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+#gradientBL:hover {
+    background: linear-gradient(to bottom left, chartreuse, dodgerblue); /* Adjust the hover color stops */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    color: black;
+
+}
+/************************************************************************************************************/
+#gradientTL {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px;
+    background: linear-gradient(to top left, dodgerblue, chartreuse); /* Adjust the direction and color stops as needed */
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+#gradientTL:hover {
+    background: linear-gradient(to top left, chartreuse, dodgerblue); /* Adjust the hover color stops */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    color: black;
+
+}
+/************************************************************************************************************/
+#gradientTR {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px;
+    background: linear-gradient(to top right, dodgerblue, chartreuse); /* Adjust the direction and color stops as needed */
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+#gradientTR:hover {
+    background: linear-gradient(to top right, chartreuse, dodgerblue); /* Adjust the hover color stops */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    color: black;
+
+}

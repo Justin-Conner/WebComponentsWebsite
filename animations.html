@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circles Grid</title>
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="codestyles.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<!-- index.html -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Fetch and insert the index content
+        fetch('index.html')
+            .then(response => response.text())
+            .then(index => {
+                document.body.innerHTML = index;
+                // Additional logic or content specific to this page
+                document.body.insertAdjacentHTML('beforeend', '<h1>animations</h1>');
+            })
+            .catch(error => console.error('Error fetching template:', error));
+    });
+</script>
+<script src="grid.js"></script>
+<script src="slides.js"></script>
+</body>
+</html>

@@ -13,7 +13,7 @@ xmp{
 	height: 100%;
 	justify-content: center;
 	align-items: flex-start; /* Align child content at the top */
-	margin-top: 46px;
+    margin-top: 10px;
   }
   
 
@@ -26,6 +26,7 @@ xmp{
 	float: left;
 	background-color: white;
 	align-items: center;
+    margin-top: 10px;
   }
   
   #one-third-content {
@@ -83,11 +84,12 @@ background-color: white;
 
 }
 #slide-footer{
-    background-color: black;
+    background-color: lightgray;
     height: 20px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-top: 1px solid lightgray; /* 1px black solid border */
+    border: 1px solid black; /* 1px black solid border */
+
 
 
 }
