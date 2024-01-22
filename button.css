@@ -1,18 +1,100 @@
-#basic{
+@keyframes borderAnimation {
+    0% {
+        border: 1px solid black;
+    }
+    100% {
+        border: 5px solid white;
+    }
+}
+
+#basicSqBdrAnime {
     width: 150px;
-    height:50px;
-    border-radius: 10px;
-    margin: 20px;
+    height: 50px;
+    margin: 25px;
     background-color: dodgerblue;
     color: white;
-    border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    border: 1px solid black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: background 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
+
+    /* Apply the color animation */
+    animation: borderAnimation 1s infinite alternate;
+}
+
+/************************************************************************************************************/
+@keyframes colorAnimation {
+    0% {
+        color: black;
+    }
+    100% {
+        color: red;
+    }
+}
+
+#basicSqTxtAnime {
+    width: 150px;
+    height: 50px;
+    margin: 25px;
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease, box-shadow 0.1s ease, color 0.1s ease; /* Include color in the transition */
+
+    /* Apply the color animation */
+    animation: colorAnimation 3s infinite alternate; /* Adjust the duration and animation behavior as needed */
+}
+/************************************************************************************************************/
+#basicSqBdr{
+    width: 150px;
+    height:50px;
+    margin: 25px;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid black; /* 1px black solid border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
     transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
 
 }
-#basic:hover {
+#basicSqBdr:hover {
     background: lightblue; /* Replace with your desired hover color stops */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); /* Adjust the values as needed */
+    color: black;
+}
+/************************************************************************************************************/
+#basicRd{
+    width: 150px;
+    height:50px;
+    margin: 25px;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+
+}
+#basicRd:hover {
+    background: lightblue; /* Replace with your desired hover color stops */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); /* Adjust the values as needed */
+    color: black;
+}
+/************************************************************************************************************/
+#basicSq{
+    width: 150px;
+    height:50px;
+    margin: 25px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+
+}
+#basicSq:hover {
+    background: lightblue; /* Replace with your desired hover color stops */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); /* Adjust the values as needed */
     color: black;
 }
 /************************************************************************************************************/
@@ -20,17 +102,17 @@
     width: 150px;
     height:50px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 25px;
     background: linear-gradient(to right, dodgerblue, aqua); /* Replace with your desired color stops */
     color: white;
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
     transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
 
 }
 #gradientR:hover {
     background: linear-gradient(to right, aqua, dodgerblue); /* Replace with your desired hover color stops */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); /* Adjust the values as needed */
     color: black;
 }
 /************************************************************************************************************/
@@ -38,17 +120,17 @@
     width: 150px;
     height:50px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 25px;
     background: linear-gradient(to left, dodgerblue, aqua); /* Replace with your desired color stops */
     color: white;
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
     transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
 
 }
 #gradientL:hover {
     background: linear-gradient(to left, aqua, dodgerblue); /* Replace with your desired hover color stops */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); /* Adjust the values as needed */
     color: black;
 }
 /************************************************************************************************************/
@@ -56,17 +138,17 @@
     width: 150px;
     height:50px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 25px;
     background: linear-gradient(to top, dodgerblue, aqua); /* Replace with your desired color stops */
     color: white;
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
     transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
 
 }
 #gradientT:hover {
     background: linear-gradient(to top, aqua, dodgerblue); /* Replace with your desired hover color stops */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); /* Adjust the values as needed */
     color: black;
 }
 /************************************************************************************************************/
@@ -74,18 +156,18 @@
     width: 150px;
     height: 50px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 25px;
     background: linear-gradient(to bottom, dodgerblue, aqua); /* Replace with your desired color stops */
     color: white;
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
     transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
 
 }
 
 #gradientB:hover {
     background: linear-gradient(to bottom, aqua, dodgerblue); /* Replace with your desired hover color stops */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); /* Adjust the values as needed */
     color: black;
 }
 /************************************************************************************************************/
@@ -93,17 +175,17 @@
     width: 150px;
     height: 50px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 25px;
     background: linear-gradient(to bottom right, dodgerblue, chartreuse); /* Adjust the direction and color stops as needed */
     color: white;
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
     transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
 }
 
 #gradientBR:hover {
     background: linear-gradient(to bottom right, chartreuse, dodgerblue); /* Adjust the hover color stops */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); /* Adjust the values as needed */
     color: black;
 
 }
@@ -112,17 +194,17 @@
     width: 150px;
     height: 50px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 25px;
     background: linear-gradient(to bottom left, dodgerblue, chartreuse); /* Adjust the direction and color stops as needed */
     color: white;
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
     transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
 }
 
 #gradientBL:hover {
     background: linear-gradient(to bottom left, chartreuse, dodgerblue); /* Adjust the hover color stops */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); /* Adjust the values as needed */
     color: black;
 
 }
@@ -131,17 +213,17 @@
     width: 150px;
     height: 50px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 25px;
     background: linear-gradient(to top left, dodgerblue, chartreuse); /* Adjust the direction and color stops as needed */
     color: white;
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
     transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
 }
 
 #gradientTL:hover {
     background: linear-gradient(to top left, chartreuse, dodgerblue); /* Adjust the hover color stops */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); /* Adjust the values as needed */
     color: black;
 
 }
@@ -150,17 +232,111 @@
     width: 150px;
     height: 50px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 25px;
     background: linear-gradient(to top right, dodgerblue, chartreuse); /* Adjust the direction and color stops as needed */
     color: white;
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
     transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
 }
 
 #gradientTR:hover {
     background: linear-gradient(to top right, chartreuse, dodgerblue); /* Adjust the hover color stops */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); /* Adjust the values as needed */
     color: black;
+
+}
+/************************************************************************************************************/
+@keyframes gradientAnimationLR {
+    0% {
+        background: linear-gradient(to right, dodgerblue, aqua);
+    }
+    50% {
+        background: linear-gradient(to left, dodgerblue, aqua);
+    }
+    100% {
+        background: linear-gradient(to right, dodgerblue, aqua);
+    }
+}
+
+.animated-buttonLR {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 25px;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    animation: gradientAnimationLR 3s infinite; /* Use the correct animation name */
+    transition: box-shadow 0.3s ease;
+}
+
+.animated-buttonLR:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8);
+    animation: none;
+}
+
+/************************************************************************************************************/
+
+@keyframes gradientAnimationTB {
+    0% {
+        background: linear-gradient(to bottom, dodgerblue, aqua);
+        
+    }
+    50% {
+        background: linear-gradient(to top, dodgerblue, aqua);
+    }
+    100% {
+        background: linear-gradient(to bottom, dodgerblue, aqua);
+    }
+}
+
+.animated-buttonTB {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    animation: gradientAnimationTB 1s infinite; /* Use the correct animation name */
+    transition: box-shadow 0.3s ease;
+}
+
+.animated-buttonTB:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8);
+    animation: none;
+
+}
+/************************************************************************************************************/
+@keyframes gradientAnimationRad {
+    0% {
+        background: linear-gradient(to bottom right, dodgerblue, aqua);
+    }
+    25% {
+        background: linear-gradient(to bottom left, dodgerblue, aqua);    }
+    50% {
+        background: linear-gradient(to top left, dodgerblue, aqua);    }
+    75% {
+        background: linear-gradient(to top right, dodgerblue, aqua);    }
+    100% {
+        background: linear-gradient(to bottom right, dodgerblue, aqua);    }
+}
+
+.animated-buttonRad {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    animation: gradientAnimationRad 1s infinite; /* Use the correct animation name */
+    transition: box-shadow 0.3s ease;
+}
+
+.animated-buttonRad:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8);
+    animation: none;
 
 }

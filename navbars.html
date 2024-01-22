@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="navbar.css">
     <link rel="stylesheet" type="text/css" href="codestyles.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="button.css">
+
 </head>
 <body>
 <!-- index.html -->
@@ -16,12 +18,19 @@
             .then(response => response.text())
             .then(index => {
                 document.body.innerHTML = index;
+                
                 // Additional logic or content specific to this page
-                document.body.insertAdjacentHTML('beforeend', '<h1>navbars</h1>');
+                var componentContainer = document.getElementById('component-container');
+                if (componentContainer) {
+                    componentContainer.innerHTML = '<p>navbar stuff</p>';
+                } else {
+                    console.error('Element with id="component-container" not found.');
+                }
             })
             .catch(error => console.error('Error fetching template:', error));
     });
 </script>
+
 <script src="grid.js"></script>
 <script src="slides.js"></script>
 </body>
